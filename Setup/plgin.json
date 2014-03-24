@@ -1,0 +1,7 @@
+{
+    "title": "Scss Compiler",
+    "version": "0.01",
+    "name": "ScssCompiler",
+    "description": "This plugin automatically compiles .scss files in main theme directory.",
+    "author": "nerijusv.lt@gmail.cp,"
+}
