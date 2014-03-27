@@ -7,6 +7,7 @@ use Ip\Form\Field\Checkbox;
 class AdminController extends \Ip\Controller{
 
     public function index(){
+
         $form = $this->getFilesForm();
         $formHtml = $form->render();
 

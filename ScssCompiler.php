@@ -38,7 +38,8 @@ class ScssCompiler
 
         //compile
         $scss_compiler = new \scssc();
-        $scss_compiler->setImportPaths(ipThemeFile(''));
+        //get file path
+        $scss_compiler->setImportPaths(dirname(ipThemeFile($fileName)));
         $string_css = $scss_compiler->compile($string_sass);
 
         //put css
@@ -88,6 +89,7 @@ class ScssCompiler
     private function getNewName($fileName){
         return substr($fileName, 0, -4) . 'css';
     }
+
 
 
 }
